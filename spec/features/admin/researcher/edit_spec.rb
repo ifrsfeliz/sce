@@ -4,7 +4,7 @@ RSpec.feature 'Edita Pesquisador' do
   given!(:admin) { create :user, :as_admin }
   given!(:researcher) { create :researcher }
 
-  context "Edição Pesquisador no SCP" do
+  context "Edição Pesquisador" do
 
     it 'Edita um pesquisador com dados válidos' do
       sign_in_as_admin(admin)

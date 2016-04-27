@@ -5,7 +5,7 @@ RSpec.feature 'Edita Linha de Pesquisa' do
   given!(:research_group) { create :research_group }
   given!(:research_line) { create :research_line, research_group: research_group }
 
-  context "Edição de linha de pesquisa no SCP" do
+  context "Edição de linha de pesquisa" do
 
     it 'Edita uma linha de pesquisa com dados válidos' do
       sign_in_as_admin(admin)

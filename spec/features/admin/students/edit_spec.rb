@@ -4,7 +4,7 @@ RSpec.feature 'Edita Aluno' do
   given!(:admin) { create :user, :as_admin }
   given!(:student) { create :student }
 
-  context "Edição de Aluno no SCP" do
+  context "Edição de Aluno" do
 
     it 'Edita um aluno com dados válidos' do
       sign_in_as_admin(admin)

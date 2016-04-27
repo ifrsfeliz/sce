@@ -4,7 +4,7 @@ RSpec.feature 'Edita Situação' do
   given!(:admin) { create :user, :as_admin }
   given!(:situation) { create :situation }
 
-  context "Edição de situações no SCP" do
+  context "Edição de situações" do
 
     it 'Edita uma situação existente com dados válidos' do
       sign_in_as_admin(admin)

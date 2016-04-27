@@ -7,7 +7,7 @@ RSpec.feature 'Cria Projeto' do
   given!(:scholarship_type) { create :scholarship_type }
   given!(:situation) { create :situation }
 
-  context "Inclusão de Projeto no SCP" do
+  context "Inclusão de Projeto" do
 
     it 'cria uma novo projeto com dados válidos' do
       sign_in_as_admin(admin)

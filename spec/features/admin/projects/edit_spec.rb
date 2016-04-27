@@ -4,7 +4,7 @@ RSpec.feature 'Edita Projeto' do
   given!(:admin) { create :user, :as_admin }
   given!(:project) { create :project }
 
-  context "Edição de projetos no SCP" do
+  context "Edição de projetos" do
 
     it 'Edita um projeto existente com dados válidos' do
       sign_in_as_admin(admin)

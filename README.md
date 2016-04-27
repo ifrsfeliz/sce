@@ -255,7 +255,7 @@ production:
   campus_endereco1: Rua Princesa Isabel - N° 60
   campus_endereco2: Vila Rica - Feliz - RS
   campus_telefone: (51) 3637-4418
-  titulo_do_site: SCP - Controle de Projetos de Pesquisa do Campus Feliz
+  titulo_do_site: SCE - Controle de Projetos da Extensão
 
 ```
 
@@ -287,7 +287,7 @@ A partir disso é para estar funcionando, caso houver dúvidas, não existe em n
 
 Para auxílio sti@feliz.ifrs.edu.br
 
-# Para atualização do SCP, quando houverem funcionalidades extras
+# Para atualização do SCE, quando houverem funcionalidades extras
 
 Basta entrar na pasta do projeto e executar os comandos
 

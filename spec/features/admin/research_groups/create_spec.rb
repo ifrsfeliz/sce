@@ -5,7 +5,7 @@ RSpec.feature 'Cria Grupo de Pesquisa' do
   given!(:researcher) { create :researcher }
   given!(:area) { create :area }
 
-  context "Inclusão de grupo de pesquisa no SCP" do
+  context "Inclusão de grupo de pesquisa" do
 
     it 'cria um novo grupo de pesquisa com dados válidos' do
       sign_in_as_admin(admin)

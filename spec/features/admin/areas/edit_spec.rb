@@ -4,7 +4,7 @@ RSpec.feature 'Edita área' do
   given!(:admin) { create :user, :as_admin }
   given!(:area) { create :area }
 
-  context "Edição de áreas no SCP" do
+  context "Edição de áreas" do
 
     it 'Edita uma área existente com dados válidos' do
       sign_in_as_admin(admin)

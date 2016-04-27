@@ -3,7 +3,7 @@ require 'rails_helper_features'
 RSpec.feature 'Cria Tipo de Bolsa' do
   given!(:admin) { create :user, :as_admin }
 
-  context "Inclusão de Tipo de Bolsas no SCP" do
+  context "Inclusão de Tipo de Bolsas" do
 
     it 'cria um novo tipo de bolsa com dados válidos' do
       sign_in_as_admin(admin)

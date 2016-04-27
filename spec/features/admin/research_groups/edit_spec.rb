@@ -6,7 +6,7 @@ RSpec.feature 'Edita Grupo de Pesquisa' do
   given!(:area) { create :area }
   given!(:research_group) { create :research_group, area: area, researcher: researcher }
 
-  context "Edição de grupo de pesquisa no SCP" do
+  context "Edição de grupo de pesquisa" do
 
     it 'Edita um grupo de pesquisa com dados válidos' do
       sign_in_as_admin(admin)

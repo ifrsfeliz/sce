@@ -3,7 +3,7 @@ require 'rails_helper_features'
 RSpec.feature 'Cria Situações' do
   given!(:admin) { create :user, :as_admin }
 
-  context "Inclusão de situações no SCP" do
+  context "Inclusão de situações" do
 
     it 'cria uma nova situação com dados válidos' do
       sign_in_as_admin(admin)

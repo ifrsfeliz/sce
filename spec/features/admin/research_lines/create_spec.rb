@@ -4,7 +4,7 @@ RSpec.feature 'Cria Linha de Pesquisa' do
   given!(:admin) { create :user, :as_admin }
   given!(:research_group) { create :research_group }
 
-  context "Inclusão de linha de pesquisa no SCP" do
+  context "Inclusão de linha de pesquisa" do
 
     it 'cria uma nova linha de pesquisa com dados válidos' do
       sign_in_as_admin(admin)

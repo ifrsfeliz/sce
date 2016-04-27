@@ -3,7 +3,7 @@ require 'rails_helper_features'
 RSpec.feature 'Cria Pesquisador' do
   given!(:admin) { create :user, :as_admin }
 
-  context "Inclusão de pesquisador no SCP" do
+  context "Inclusão de pesquisador" do
 
     it 'cria um novo pesquisador com dados válidos' do
       sign_in_as_admin(admin)
@@ -12,7 +12,7 @@ RSpec.feature 'Cria Pesquisador' do
 
       click_on 'Novo Pesquisador'
 
-      fill_in 'researcher_nome', with: 'Pesquisador Teste SCP'
+      fill_in 'researcher_nome', with: 'Pesquisador Teste'
       fill_in 'researcher_cpf', with: '000.000.000-00'
       fill_in 'researcher_rg', with: '0000000000'
       fill_in 'researcher_email', with: 'email@researcher.com.br'

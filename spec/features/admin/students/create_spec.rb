@@ -3,7 +3,7 @@ require 'rails_helper_features'
 RSpec.feature 'Cria Aluno' do
   given!(:admin) { create :user, :as_admin }
 
-  context "Inclusão de aluno no SCP" do
+  context "Inclusão de aluno" do
 
     it 'cria um novo aluno com dados válidos' do
       sign_in_as_admin(admin)
@@ -12,7 +12,7 @@ RSpec.feature 'Cria Aluno' do
 
       click_on 'Novo Aluno'
 
-      fill_in 'student_nome', with: 'Aluno Teste SCP'
+      fill_in 'student_nome', with: 'Aluno Teste'
       fill_in 'student_cpf', with: '000.000.000-00'
       fill_in 'student_rg', with: '0000000000'
       fill_in 'student_email', with: 'email@researcher.com.br'

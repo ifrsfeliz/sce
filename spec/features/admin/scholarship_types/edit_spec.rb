@@ -4,7 +4,7 @@ RSpec.feature 'Edita Tipo de Bolsa' do
   given!(:admin) { create :user, :as_admin }
   given!(:scholarship_type) { create :scholarship_type }
 
-  context "Edição de Tipo de Bolsas no SCP" do
+  context "Edição de Tipo de Bolsas" do
 
     it 'Edita um tipo de bolsa existente com dados válidos' do
       sign_in_as_admin(admin)

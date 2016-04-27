@@ -17,25 +17,25 @@ body {
 }
 
 a {
-	color: #3AAC1C; /* #3AAC1C, #6F5BB1, #224389, #EE8B07, #9C1A72, #CD2E22 */
+	color: #9C1A72; /* #9C1A72, #6F5BB1, #224389, #EE8B07, #9C1A72, #CD2E22 */
 }
-	
+
 hr {
-  border-top: 1px solid #3AAC1C; /* #3AAC1C, #6F5BB1, #224389, #EE8B07, #9C1A72, #CD2E22 */
+  border-top: 1px solid #9C1A72; /* #9C1A72, #6F5BB1, #224389, #EE8B07, #9C1A72, #CD2E22 */
 }
 
 table caption .new-record {
 	float: right;
 }
 
-.form-group.required .control-label:after { 
+.form-group.required .control-label:after {
    content:"*";
    color:red;
 }
 
 .btn-primary {
-  background-color: #3AAC1C; /* #3AAC1C, #6F5BB1, #224389, #EE8B07, #9C1A72, #CD2E22 */
-	border-color: #3AAC1C; /* #3AAC1C, #6F5BB1, #224389, #EE8B07, #9C1A72, #CD2E22 */
+  background-color: #9C1A72; /* #9C1A72, #6F5BB1, #224389, #EE8B07, #9C1A72, #CD2E22 */
+	border-color: #9C1A72; /* #9C1A72, #6F5BB1, #224389, #EE8B07, #9C1A72, #CD2E22 */
 }
 
 .btn-primary:hover {
@@ -50,7 +50,7 @@ table caption .new-record {
 /* overrides/sobreescritas do bootstrap */
 
 header {
-  background: #3AAC1C; /* #3AAC1C, #6F5BB1, #224389, #EE8B07, #9C1A72, #CD2E22 */
+  background: #9C1A72; /* #9C1A72, #6F5BB1, #224389, #EE8B07, #9C1A72, #CD2E22 */
   padding: 20px 0;
   border-top: 1px solid #3B3B3B;
 }
@@ -68,8 +68,8 @@ header h1 {
 }
 
 #content .title {
-  color: #3AAC1C;
-  border-bottom: 2px solid #3AAC1C; /* #3AAC1C, #6F5BB1, #224389, #EE8B07, #9C1A72, #CD2E22 */
+  color: #9C1A72;
+  border-bottom: 2px solid #9C1A72; /* #9C1A72, #6F5BB1, #224389, #EE8B07, #9C1A72, #CD2E22 */
   padding-bottom: 10px;
   margin-bottom: 20px;
 }
@@ -79,7 +79,7 @@ header h1 {
 }
 
 footer {
-  background: #3AAC1C; /* #3AAC1C, #6F5BB1, #224389, #EE8B07, #9C1A72, #CD2E22 */
+  background: #9C1A72; /* #9C1A72, #6F5BB1, #224389, #EE8B07, #9C1A72, #CD2E22 */
   padding: 10px 0 0;
 }
 

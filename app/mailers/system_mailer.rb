@@ -15,6 +15,6 @@ class SystemMailer < ApplicationMailer
   end
 
   def testar_envio_de_email
-    mail(to: User.first.email, subject: "E-mail de teste do SCP")
+    mail(to: User.first.email, subject: "E-mail de teste do SCE")
   end
 end
