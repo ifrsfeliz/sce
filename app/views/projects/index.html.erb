@@ -1,4 +1,4 @@
-<h1 class="title">Lista de Projetos</h1>
+<h1 class="title">Lista de Ações</h1>
 
 <table class="table table-striped">
   <tr>
@@ -6,9 +6,9 @@
       <th><%= sort_link @q, :coordenador_nome, 'Coordenador' %></th>
       <th><%= sort_link @q, :data_inicio, 'Data Início' %></th>
       <th><%= sort_link @q, :data_fim, 'Data Fim' %></th>
-      <th><%= sort_link @q, :numero_suap, 'Número SUAP' %></th>
-      <th><%= sort_link @q, :scholarship_type_nome, 'Tipo de Bolsa' %></th>
-      <th><%= sort_link @q, :research_line_nome, 'Linha de Pesq.' %></th>
+      <th><%= sort_link @q, :numero_suap, 'Número SIGProj' %></th>
+      <th><%= sort_link @q, :scholarship_type_nome, 'Forma de Ação' %></th>
+      <th><%= sort_link @q, :research_line_nome, 'Área Temática' %></th>
       <th><%= sort_link @q, :situation_nome, 'Situação' %></th>
       <th colspan="3">Ações</th>
   </tr>
@@ -30,10 +30,10 @@
         <%= f.search_field :numero_suap_cont, class: 'form-control' %>
       </td>
       <td>
-        <%= f.select :scholarship_type_id_eq, options_from_collection_for_select(ScholarshipType.all, "id", "nome", @q.scholarship_type_id_eq), {include_blank: "Selecione o Tipo"}, {class: 'form-control'} %>
+        <%= f.select :scholarship_type_id_eq, options_from_collection_for_select(ScholarshipType.all, "id", "nome", @q.scholarship_type_id_eq), {include_blank: "Selecione a Forma"}, {class: 'form-control'} %>
       </td>
       <td>
-        <%= f.select :research_line_id_eq, options_from_collection_for_select(ResearchLine.all, "id", "nome", @q.research_line_id_eq), {include_blank: "Selecione a Linha"}, {class: 'form-control'} %>
+        <%= f.select :research_line_id_eq, options_from_collection_for_select(ResearchLine.all, "id", "nome", @q.research_line_id_eq), {include_blank: "Selecione a Área"}, {class: 'form-control'} %>
       </td>
       <td>
         <%= f.select :situation_id_eq, options_from_collection_for_select(Situation.all, "id", "nome", @q.situation_id_eq), {include_blank: "Selecione a Situação"}, {class: 'form-control'} %>
@@ -72,5 +72,5 @@
 
 <% if can? :create, Project %>
   <hr />
-  <%= link_to 'Novo Projeto', new_project_path, class: 'btn btn-success' %>
+  <%= link_to 'Nova Ação', new_project_path, class: 'btn btn-success' %>
 <% end %>

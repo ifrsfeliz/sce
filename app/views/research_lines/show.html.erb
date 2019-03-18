@@ -1,10 +1,8 @@
-<h1 class="title">Exibindo Linha de Pesquisa</h1>
+<h1 class="title">Exibindo Linha de Extensão</h1>
 
 <dl class="dl-horizontal">
   <dt>Nome:</dt>
   <dd><%= @research_line.nome %></dd>
-  <dt>Grupo de Pesquisa:</dt>
-  <dd><%= @research_line.research_group.nome %></dd>
 </dl>
 
 <hr />
@@ -17,7 +15,7 @@
 <br />
 <br />
 
-<h4 class="title">Projetos dessa Linha de Pesquisa</h4>
+<h4 class="title">Ações desta Linha de Extensão</h4>
 <table class="table table-striped">
   <tr>
     <th>Nome</th>
@@ -32,7 +30,7 @@
     <% end %>
   <% else %>
     <tr>
-      <td>Nenhum Projeto vinculado a esse Grupo de Pesquisa</td>
+      <td>Nenhuma Ação vinculada a esse Grupo de Extensão</td>
     </tr>
   <% end %>
 </table>

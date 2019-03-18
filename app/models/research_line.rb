@@ -16,6 +16,6 @@ class ResearchLine < ActiveRecord::Base
   has_many :projects
 
   # Validations
-  validates_presence_of :nome, :research_group
+  validates_presence_of :nome
 
 end

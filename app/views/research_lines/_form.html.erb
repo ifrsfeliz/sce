@@ -2,7 +2,6 @@
   <%= f.error_notification %>
 
     <%= f.input :nome %>
-    <%= f.association :research_group, label_method: :nome, value_method: :id, include_blank: false, input_html: {class: 'chosen-select'}, label: 'Grupo de Pesquisa' %>
 
     <%= f.submit "Salvar", class: 'btn btn-primary'%>
 <% end %>

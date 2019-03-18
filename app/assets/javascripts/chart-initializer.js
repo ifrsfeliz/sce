@@ -4,7 +4,7 @@ ready = function() {
   if ( $( "#chart1" ).length ) {
 	  var chart1 = new CanvasJS.Chart("chart1", {
 	  	title: {
-	  		text: "Projetos por Situação"
+	  		text: "Ações por Situação"
 	  	},
 	  	data: [{
 	  		type: "doughnut",
@@ -21,7 +21,7 @@ ready = function() {
   if ( $( "#chart2" ).length ) {
 	  var chart2 = new CanvasJS.Chart("chart2", {
 	  	title: {
-        text: "Projetos por Tipo de Bolsa"
+        text: "Forma das Ações"
 	  	},
 	  	data: [{
 	  		type: "doughnut",
@@ -38,7 +38,7 @@ ready = function() {
   if ( $( "#chart3" ).length ) {
 	  var chart3 = new CanvasJS.Chart("chart3", {
 	  	title: {
-        text: "Projetos por Ano"
+        text: "Ações por Ano"
 	  	},
 	  	data: [{
         type: "column",

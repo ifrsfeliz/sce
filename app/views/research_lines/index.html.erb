@@ -1,15 +1,14 @@
-<h1 class="title">Lista de Linhas de Pesquisa</h1>
+<h1 class="title">Lista de Linhas de Extensão</h1>
 
 <table class="table table-striped">
   <tr>
     <th><%= sort_link @q, :nome, 'Nome' %></th>
-    <th><%= sort_link @q, :research_group_nome, 'Grupo de Pesquisa' %></th>
     <th colspan="3">Ações</th>
   </tr>
 
   <%= content_tag_for(:tr, @research_lines) do |research_line| %>
     <td><%= research_line.nome %></td>
-    <td><%= link_to research_line.research_group.nome, research_line.research_group %></td>
+
     <% if can? :read, research_line %>
       <td><%= link_to 'Mostrar', research_line, class: 'btn btn-default btn-xs', id: "show_research_line_#{research_line.id}" %></td>
     <% end %>
@@ -24,4 +23,4 @@
 
 <hr />
 
-<%= link_to 'Nova Linha de Pesquisa', new_research_line_path, class: 'btn btn-success' %>
+<%= link_to 'Nova Linha de Extensão', new_research_line_path, class: 'btn btn-success' %>

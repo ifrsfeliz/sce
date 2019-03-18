@@ -5,21 +5,22 @@
     <%= f.association :coordenador, label_method: :nome, input_html: { class: 'chosen-select' } %>
     <%= f.input :data_inicio, label: 'Data Início', as: 'date_picker' %>
     <%= f.input :data_fim, as: 'date_picker' %>
-    <%= f.input :numero_suap, label: 'Número SUAP' %>
+    <%= f.input :numero_suap, label: 'Número SIGProj' %>
     <%= f.input :nome_edital %>
-    <%= f.input :edital, label: 'Arquivo do projeto:', as: :file %>
+    <%= f.input :edital, label: 'Arquivo da Ação:', as: :file %>
     <% if f.object.edital_file_name? %>
       <%= link_to f.object.edital_file_name, f.object.edital.url, target: '_blank' %> - <%= link_to 'Deletar', project_delete_edital_path(f.object), class: 'btn btn-danger btn-xs' %>
       <br />
       <br />
     <% end %>
-    <%= f.association :scholarship_type, label_method: :nome, input_html: { class: 'chosen-select' }, label: 'Tipo de Bolsa' %>
-    <%= f.input :auxilio_aipct, label: 'Auxílio AIPCT' %>
-    <%= f.input :valor_aipct, label: 'Valor AIPCT', input_html: {value: f.object.valor_aipct || '0,00'} %>
-    <%= f.association :research_line, label: 'Linha de Pesquisa', label_method: :nome, input_html: { class: 'chosen-select' } %>
+    <%= f.association :scholarship_type, label_method: :nome, input_html: { class: 'chosen-select' }, label: 'Forma de Ação' %>
+    <%= f.input :auxilio_aipct, label: 'Auxílio PAIEX' %>
+    <%= f.input :valor_aipct, label: 'Valor PAIEX', input_html: {value: f.object.valor_aipct || '0,00'} %>
+    <%= f.input :auxilio_pibex, label: 'Bolsa PIBEX' %>
+    <%= f.association :research_line, label: 'Área Temática', label_method: :nome, input_html: { class: 'chosen-select' } %>
     <%= f.association :situation, label: 'Situação', label_method: :nome, input_html: { class: 'chosen-select' } %>
 
-    <p class="alert alert-info"><strong>Importante! Qualquer alteração nos campos abaixo somente serão efetivados após clicar no botão de Atualizar Projeto/Criar Projeto</strong></p>
+    <p class="alert alert-info"><strong>Importante! Qualquer alteração nos campos abaixo somente serão efetivados após clicar no botão de Atualizar Ação/Criar Ação</strong></p>
 
     <h4 class="title">Definição dos Relatórios</h4>
     <div id="reports">
@@ -31,9 +32,9 @@
 
     <hr />
 
-    <h4 class="title">Vínculo de Pesquisadores</h4>
+    <h4 class="title">Vínculo de Extensionistas</h4>
     <div id="member_researchers">
-      <%= link_to_add_association 'Adicionar Pesquisador', f, :member_researchers, class: 'btn btn-primary' %>
+      <%= link_to_add_association 'Adicionar Extensionista', f, :member_researchers, class: 'btn btn-primary' %>
       <%= f.simple_fields_for :member_researchers do |m| %>
         <%= render 'member_researcher_fields', :f => m, :render_options => {:wrapper => 'inline' } %>
       <% end %>

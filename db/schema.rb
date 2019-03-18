@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160425165002) do
+ActiveRecord::Schema.define(version: 20190318175857) do
 
   create_table "areas", force: :cascade do |t|
     t.string   "nome",       limit: 255
@@ -91,6 +91,7 @@ ActiveRecord::Schema.define(version: 20160425165002) do
     t.integer  "edital_file_size",    limit: 4
     t.datetime "edital_updated_at"
     t.text     "observacao",          limit: 65535
+    t.boolean  "auxilio_pibex"
   end
 
   create_table "report_attachments", force: :cascade do |t|
